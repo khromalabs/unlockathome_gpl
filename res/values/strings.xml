@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UnlockAtHome</string>
+    <string name="eula_accept">Accept</string>
+    <string name="eula_refuse">Refuse</string>
+    <string name="eula_title">License</string>
+    <string name="info">Info</string>
+    <string name="quit">Quit</string>
+    <string name="preferences">Preferences</string>
+    <string name="msg_info">UnlockAtHome v.1.1 2010 Copyright (C) Accedo Servicios Web S.L.U.</string>
+    <string name="msg_wifi">Wifi must be enabled on phone to select the unlocked networks</string>
+    <string name="msg_lock">Pattern lock must be enabled to use this application, activate it, then please return and select some secure located network(s)</string>
+    <string name="msg_networks">Remember this: be carefull is YOUR RESPONSABILITY to not forget the unlock pattern while this application is installed and active!</string>
+    <string name="msg_select">Please select the networks where you want to disable the lock pattern while connected</string>
+    <string name="msg_tap">Tap to modify networks lock configuration</string>
+    <string name="pref_status_bar">Lock status icon</string>
+    <string name="pref_status_summary">Show or hide the lock status icon on status bar</string>
+    <string name="pref_common">Common</string>
+    <string name="pref_wifi">Wifi</string>
+    <string name="pref_wifi_on_title">White network always on</string>
+    <string name="pref_wifi_on_summary">Keep wifi always on while connected to a whitelisted network</string>
+    <string name="pref_alternate_title">Non-white status</string>
+    <string name="pref_alternate_summary">Status for wifi sleep policy when disconnected of a whitelisted network</string>
+</resources>

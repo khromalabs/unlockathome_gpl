@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.accedo.unlockathome"
+    android:versionCode="5"
+    android:versionName="1.4">
+    <application android:icon="@drawable/launcher_icon" android:label="@string/app_name" android:debuggable="false">
+        <activity android:name="UnlockAtHome" android:label="@string/app_name" android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity android:name="Preferences"
+			android:label="@string/preferences"
+			android:excludeFromRecents="true" />
+        <receiver android:name="WiFiConnectionReceiver" android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.supplicant.CONNECTION_CHANGE" />
+                <action android:name="android.net.wifi.supplicant.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <service android:name="UnlockService"></service>
+    </application>
+    <uses-permission 
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission 
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.net.wifi.WIFI_STATE_CHANGED" />  
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-feature android:name="android.hardware.wifi" />
+</manifest>

@@ -1,0 +1,1 @@
+This application disables the lock pattern only while your device is connected to a (defined) secure located wifi network, useful for example if you have one at home. For best performance enable the preference "white network always on", so wifi always remains active while connected to a white-listed network. 

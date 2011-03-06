@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_common">
+        <CheckBoxPreference
+                android:key="iconStatusBar"
+                android:title="@string/pref_status_bar"
+                android:defaultValue="true" 
+                android:summary="@string/pref_status_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_wifi">
+        <CheckBoxPreference
+                android:key="wifiSuspension"
+                android:title="@string/pref_wifi_on_title"
+                android:defaultValue="false"
+                android:summary="@string/pref_wifi_on_summary" />
+		<ListPreference android:title="@string/pref_alternate_title"
+            android:summary="@string/pref_alternate_summary" 
+            android:key="alternateState"
+			android:entries="@array/pref_alternate_entries"
+			android:enabled="false"
+			android:entryValues="@array/pref_alternate_entries_values"
+			android:defaultValue="0" />
+    </PreferenceCategory>
+</PreferenceScreen>
